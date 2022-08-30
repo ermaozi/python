@@ -8,9 +8,6 @@ ENV LANG=zh_CN.UTF-8 \
     LC_ALL=zh_CN.UTF-8 \
     TZ=Asia/Shanghai
 
-WORKDIR /
-
-ADD . .
 RUN apt update &&\
     apt upgrade -y &&\
     apt install -y language-pack-zh-hans gcc python3.10 python3-dev python3-pip libcurl4-openssl-dev &&\
